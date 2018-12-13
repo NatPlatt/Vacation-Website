@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="vacation.css">
+        <link href="https://fonts.googleapis.com/css?family=Almendra+SC|EB+Garamond|IM+Fell+English+SC|Metamorphous|Noto+Serif+KR" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <header>
+            <div class="heading">
+                <h1>Flights of Fancy</h1>
+                
+                <h2>Find your dream vacation</h2>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href = "packages.html">Packages</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <main>
+        <figure class="portrait"><img src="Albus-Dumbledore-Moving-Portrait.gif" width="450" height="600" alt="Portrait of Dumbledore"><figcaption>We eagerly await your contact.</figcaption></figure>
+        <form class="testForm" action="FormToEmail.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Name</legend>
+                    <label>
+                        <span class="name">First Name:</span>
+                        <input class="myInput" name="first" value="" type="text" placeholder="John" required>
+                    </label>
+                    <label>
+                        <span class="name">Last Name:</span>
+                        <input class="myInput" name="last" value="" type="text">
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>
+                    <span class="contact">Email:</span>
+                    <input class="myInput" type="email" name="email" value placeholder="example@email.com" required>
+                </label>
+                <label>
+                    <span>Phone:</span>
+                    <input class="myInput" type="tel" name="telephone" value placeholder="123-555-6789" pattern="[0-9-. ]{10}">
+                </label>
+                <label>
+                    <span>Age:</span>
+                    <select>
+                        <option value="under 20">under 20</option>
+                        <option value="20-29">20-29</option>
+                        <option value="30-39">30-39</option>
+                        <option value="40-49">40-49</option>
+                        <option value="50-59">50-59</option>
+                        <option value="60-69">60-69</option>
+                        <option value="70-79">70-79</option>
+                        <option value="80-89">80-89</option>
+                        <option value="90-99">90-99</option>
+                        <option value="100+">100+</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>How did you find out about our company?</legend>
+                <label>
+                    <input type="radio" name="web search" value="Web Search">
+                    <span class="reason">Web Search</span>
+                    
+                    <input type="radio" name="referral" value="Referral">
+                    <span class="reason">Referral</span>
+                    
+                    <input type="radio" name="the daily prophet" value="The Daily Prophet">
+                    <span class="reason">The Daily Prophet</span>
+                    
+                    <input type="radio" name="owl post" value="Owl Post">
+                    <span class="reason">Owl Post</span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <textarea class="textbox" rows="10" cols="50"></textarea>
+                <input class="submit" type="submit" name="submit" value="SUBMIT">
+            </fieldset>
+            <input type="hidden" name="subject" value="website contact">
+            <input type="hidden" name="redirect" value="confirm.html">
+        </form>
+        <div class="keepOpen"></div>
+        </main>
+        <footer>
+            <p>&copy; 2018 &bull; Flights of Fancy &bull; Built by Natalie Zollinger</p>
+        </footer>
+        
+    </body>
+
+</html>
